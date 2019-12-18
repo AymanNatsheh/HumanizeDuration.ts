@@ -267,6 +267,17 @@ export class HumanizeDurationLanguage {
             ms: (c: any) => { return 'millisekund' + (c !== 1 ? 'er' : ''); },
             decimal: ','
         },
+        sk: {
+            y: (c: any) => { return ['rok', 'roky', 'roky', 'rokov'][this.getCzechForm(c)] },
+            mo: (c: any) => { return ['mesiac', 'mesiace', 'mesiace', 'mesiacov'][this.getCzechForm(c)] },
+            w: (c: any) => { return ['týždeň', 'týždne', 'týždne', 'týždňov'][this.getCzechForm(c)] },
+            d: (c: any) => { return ['deň', 'dni', 'dni', 'dní'][this.getCzechForm(c)] },
+            h: (c: any) => { return ['hodina', 'hodiny', 'hodiny', 'hodín'][this.getCzechForm(c)] },
+            m: (c: any) => { return ['minúta', 'minúty', 'minúty', 'minút'][this.getCzechForm(c)] },
+            s: (c: any) => { return ['sekunda', 'sekundy', 'sekundy', 'sekúnd'][this.getCzechForm(c)] },
+            ms: (c: any) => { return ['milisekunda', 'milisekundy', 'milisekundy', 'milisekúnd'][this.getCzechForm(c)] },
+            decimal: ','
+        },
         tr: {
             y: 'yıl',
             mo: 'ay',
